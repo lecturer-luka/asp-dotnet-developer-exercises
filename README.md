@@ -1,2 +1,2 @@
 # .NET developer
-Vježbe za ponavljanje gradiva .NET radnog okvira i C# programskog jezika
+Vježbe i materijali za ponavljanje gradiva .NET radnog okvira i C# programskog jezika
