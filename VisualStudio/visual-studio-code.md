@@ -1,6 +1,6 @@
 # Visual Studio Code and dotnet cheat sheet
 
-Basic .NET Core CLI Cheat Sheet with the list of commands and to use when learning .NET 6, the command line and Visual Studio Code
+Basic .NET CLI Cheat Sheet with the list of commands and to use when learning .NET 6, the command line and Visual Studio Code
 
 ---
 
@@ -37,7 +37,7 @@ dotnet new sln -o MySolutionName
 
 In the simplest terms, a project template represents the type of application that will be built.
 
-Add a project to a solution:
+Add a console project to a solution:
 
 ```dotnet
 cd MySolutionName
