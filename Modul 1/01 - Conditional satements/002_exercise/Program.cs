@@ -8,9 +8,9 @@ int first_number, second_number, select_option;
 
 // Here we have basic logic to insert data
 // (in this example input validation is not required, the user is expected to enter an integer values)
-Console.Write("Unesite prvi broj: ");
+Console.Write("Enter the first number: ");
 first_number = Convert.ToInt32(Console.ReadLine());
-Console.Write("Unesite drugi broj: ");
+Console.Write("Enter second number: ");
 second_number = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("\nSelect a calculation operation:\n");
