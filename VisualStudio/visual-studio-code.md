@@ -45,6 +45,15 @@ cd MySolutionName
 dotnet new console --framework net6.0 -o MyProjectName
 ```
 
+Add a console project to a solution (with namespace, class and Main() method):
+
+```dotnet
+cd MySolutionName
+
+dotnet new console --framework net6.0 -o MyProjectName --use-program-main
+```
+
+
 ## Project building and runing
 
 Build current’s folder solution or project:
