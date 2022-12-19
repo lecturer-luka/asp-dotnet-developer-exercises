@@ -68,4 +68,21 @@ Run current’s folder project:
 dotnet run
 ```
 
+## Project reference
+
+The dotnet add reference command provides a convenient option to add project references to a project. After running the command, the project reference elements are added to the project file.
+
+```dotnet
+dotnet new sln -o MySolutionName
+cd MySolutionName
+
+dotnet new console -o FirstProject --framework net6.0  --use-program-main
+
+dotnet new console -o SecondProject --framework net6.0  --use-program-main
+
+
+// Adds "SecondProject.csproj" folder reference to "FirstProject.csproj" folder
+dotnet add FirstProject/FirstProject.csproj reference SecondProject/SecondProject.csproj
+```
+
 ### More soon...
