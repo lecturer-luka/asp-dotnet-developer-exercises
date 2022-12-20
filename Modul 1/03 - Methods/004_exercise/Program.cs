@@ -12,7 +12,7 @@ internal class Program
     static void Main(string[] args)
     {
 
-        ArrayList prva_neorganizirana_lista = new ArrayList()
+        ArrayList first_unorganized_list = new ArrayList()
         {
             "Mike",
             "Ana",
@@ -43,7 +43,7 @@ internal class Program
             '.'
         };
 
-        ArrayList druga_neorganizirana_lista = new ArrayList()
+        ArrayList second_unorganized_list = new ArrayList()
         {
             "Programmer",
             "!",
