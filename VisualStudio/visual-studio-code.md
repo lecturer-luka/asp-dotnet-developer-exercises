@@ -33,6 +33,7 @@ dotnet new sln --name MySolutionName
 dotnet new sln -o MySolutionName
 ```
 
+
 ## Project templates
 
 In the simplest terms, a project template represents the type of application that will be built.
@@ -53,20 +54,16 @@ cd MySolutionName
 dotnet new console --framework net6.0 -o MyProjectName --use-program-main
 ```
 
-
-## Project building and runing
-
-Build current’s folder solution or project:
+Add a class library project to a solution:
 
 ```dotnet
-dotnet build
+cd MySolutionName
+
+dotnet new classlib --framework net6.0 -o MyLibraryName
+
+dotnet sln add MyLibraryName\MyLibraryName.csproj
 ```
 
-Run current’s folder project:
-
-```dotnet
-dotnet run
-```
 
 ## Project reference
 
@@ -83,6 +80,21 @@ dotnet new console -o SecondProject --framework net6.0  --use-program-main
 
 // Adds "SecondProject.csproj" folder reference to "FirstProject.csproj" folder
 dotnet add FirstProject/FirstProject.csproj reference SecondProject/SecondProject.csproj
+```
+
+
+## Project building and runing
+
+Build current’s folder solution or project:
+
+```dotnet
+dotnet build
+```
+
+Run current’s folder project:
+
+```dotnet
+dotnet run
 ```
 
 ### More soon...
