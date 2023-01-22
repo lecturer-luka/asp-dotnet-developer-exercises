@@ -1,7 +1,7 @@
-# Proposal for C# Coding standards and naming conventions
+# Proposal For C# Coding Standards And Naming Conventions
 
 The suggestions below can be adapted to the group of participants, depending on the knowledge of the individual.
-The idea is that after module 3, the rules whose suggestions are below start to apply.
+The idea is that after module 3, the rules below start to apply.
 
 The proposals were adopted from [MS C# Coding Conventions](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md)
 
@@ -23,3 +23,84 @@ The proposals were adopted from [MS C# Coding Conventions](https://github.com/do
 
 
 ---
+
+### What's the Difference Between Programming Type Casings?
+
+Types of casings in programming are simply described in the following FreeCodeCamp [article](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/).
+
+### Examples
+
+Below are some examples of using coding standards for each term
+
+---
+
+#### 1. Class names and method names
+
+```csharp
+
+public class OrderProcessing
+{
+	public void ClearCart()
+	{
+		//...
+	}
+	public void CalculateTotal()
+	{
+		//...
+	}
+}
+
+```
+
+#### 2. Method arguments and local variables
+
+```csharp
+
+public class CartItem
+{
+	public void Add(Product product)
+	{
+		int itemCount = cartItems.Items.Count;
+		// ...
+	}
+}
+
+```
+
+
+#### 3. Meaningful names for variables
+
+```csharp
+
+	var filterUsers = from user in users
+					  where user.City == "Zagreb"
+					  select user.Name;
+
+```
+
+
+#### 4. Use predefined type names (C# aliases) like `int`, `float`, `string` for local, parameter and member declarations.
+
+```csharp
+
+// Correct
+	string firstName;
+	int id;
+	bool isSaved;
+	string commaSeparatedNames = String.Join(", ", names);
+	int index = Int32.Parse(input);
+
+// Avoid
+	String firstName;
+	Int32 id;
+	Boolean isSaved;
+	string commaSeparatedNames = string.Join(", ", names);
+	int index = int.Parse(input);
+
+```
+
+---
+
+#### 5. 
+
+### More soon...

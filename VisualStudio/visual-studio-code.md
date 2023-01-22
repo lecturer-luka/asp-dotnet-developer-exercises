@@ -38,7 +38,7 @@ dotnet new sln -o MySolutionName
 
 In the simplest terms, a project template represents the type of application that will be built.
 
-Add a console project to a solution:
+#### Add a console project to a solution:
 
 ```dotnet
 cd MySolutionName
@@ -46,7 +46,7 @@ cd MySolutionName
 dotnet new console --framework net6.0 -o MyProjectName
 ```
 
-Add a console project to a solution (with namespace, class and Main() method):
+#### Add a console project to a solution (with namespace, class and Main() method):
 
 ```dotnet
 cd MySolutionName
@@ -54,7 +54,7 @@ cd MySolutionName
 dotnet new console --framework net6.0 -o MyProjectName --use-program-main
 ```
 
-Add a class library project to a solution:
+#### Add a class library project to a solution:
 
 ```dotnet
 cd MySolutionName
