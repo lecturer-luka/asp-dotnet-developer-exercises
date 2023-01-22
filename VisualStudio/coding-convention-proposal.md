@@ -28,11 +28,11 @@ The proposals were adopted from [MS C# Coding Conventions](https://github.com/do
 
 Types of casings in programming are simply described in the following FreeCodeCamp [article](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/).
 
-### Examples
 
-Below are some examples of using coding standards for each term
+Below are some examples of using coding standards for each term.
 
 ---
+
 
 #### 1. Class names and method names
 
@@ -52,6 +52,7 @@ public class OrderProcessing
 
 ```
 
+
 #### 2. Method arguments and local variables
 
 ```csharp
@@ -60,7 +61,7 @@ public class CartItem
 {
 	public void Add(Product product)
 	{
-		int itemCount = cartItems.Items.Count;
+		int itemCount = cart.Items.Count;
 		// ...
 	}
 }
@@ -72,14 +73,14 @@ public class CartItem
 
 ```csharp
 
-	var filterUsers = from user in users
-					  where user.City == "Zagreb"
-					  select user.Name;
+var filterUsers = from user in users
+	where user.City == "Zagreb"
+	select user.Name;
 
 ```
 
 
-#### 4. Use predefined type names (C# aliases) like `int`, `float`, `string` for local, parameter and member declarations.
+#### 4. Predefined type names (C# aliases) like `int`, `float`, `string` for local, parameter and member declarations.
 
 ```csharp
 
@@ -99,8 +100,108 @@ public class CartItem
 
 ```
 
+*** Use .NET names like `Int32`, `Single`, `String` when accessing the type's static members like `Int32.TryParse` or `String.Join` ***
+
 ---
 
-#### 5. 
+
+#### 5. Constants or readonly variables can also use PascalCasing
+
+```csharp
+
+// Correct
+	public const string ShippingType = "International";
+// Avoid
+	public const string SHIPPING_TYPE = "International";
+
+```
+
+
+#### 6. Prefix private fields with an underscore
+
+```csharp 
+
+// Correct
+	private DateTime _dateOfBirth;
+	private TimeSpan _offssetTime;
+
+// Avoid
+	private DateTime client_Appointment;
+	private TimeSpan time_Left; 
+
+```
+
+
+#### 7. Declare all class properties and variables at the top of a class
+
+```csharp
+
+public class UserAccount
+{
+	public static string BankName;
+	public static decimal Reserves;      
+	public string Number { get; set; }
+	public DateTime DateOpened { get; set; }
+	public DateTime DateClosed { get; set; }
+	public decimal Balance { get; set; }     
+
+	// Constructor
+	public UserAccount()
+	{
+		// ...
+	}
+}
+
+```
+
+
+#### 8. Singular names for simple enums and plural for bit field / flags enums)
+
+```csharp
+
+// Correct
+	public enum Currency
+	{
+		GBP,
+		AUD,
+		HRK,
+		CHF,
+		EUR,
+		USD
+	} 
+
+	[Flags]
+	public enum CurrencyCodes
+	{
+		GBP = 826,
+		HRK = 191,
+		AUD = 36, 
+		CHF = 756,
+		EUR = 978,
+		USD = 840
+	}
+
+// Avoid
+	public enum CurrencyEnum
+	{
+		GBP,
+		EUR,
+		AUD,
+		CHF,
+		USD
+	}
+
+	[Flags]
+	public enum CurrencyCodesEnumFlags
+	{
+		GBP = 826,
+		HRK = 191,
+		AUD = 36, 
+		CHF = 756,
+		EUR = 978,
+		USD = 840
+	}
+
+```
 
 ### More soon...
