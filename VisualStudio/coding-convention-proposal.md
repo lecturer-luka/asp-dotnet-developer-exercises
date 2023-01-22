@@ -3,7 +3,7 @@
 The suggestions below can be adapted to the group of participants, depending on the knowledge of the individual.
 The idea is that after module 3, the rules whose suggestions are below start to apply.
 
-The proposals were adopted from [MS C# Coding Conventions](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md)
+The proposals were adopted from [MS C# Coding Conventions](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md){:target="_blank"}
 
 ---
 
