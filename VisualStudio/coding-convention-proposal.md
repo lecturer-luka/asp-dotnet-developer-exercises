@@ -102,8 +102,6 @@ var filterUsers = from user in users
 
 *** Use .NET names like `Int32`, `Single`, `String` when accessing the type's static members like `Int32.TryParse` or `String.Join` ***
 
----
-
 
 #### 5. Constants or readonly variables can also use PascalCasing
 
