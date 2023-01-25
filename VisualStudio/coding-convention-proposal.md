@@ -7,19 +7,19 @@ The proposals were adopted from [MS C# Coding Conventions](https://github.com/do
 
 ---
 
-| Term name                 | Notation   | Plural | Prefix | Suffix | Allowed characters | Underscores |
-|:--------------------------|:-----------|:-------|:-------|:-------|:-------------------|:------------|
-| Namespace name            | PascalCase | Yes    | Yes    | No     | [A-z][0-9]		 | No          |
-| Class name                | PascalCase | No     | No     | Yes    | [A-z][0-9]         | No          |
-| Constructor name          | PascalCase | No     | No     | Yes    | [A-z][0-9]         | No          |
-| Method name               | PascalCase | Yes    | No     | No     | [A-z][0-9]         | No          |
-| Method arguments          | camelCase  | Yes    | No     | No     | [A-z][0-9]         | No          |
-| Local variables           | camelCase  | Yes    | No     | No     | [A-z][0-9]         | No          |
-| Constants name            | PascalCase | No     | No     | No     | [A-z][0-9]         | No          |
-| Field name                | camelCase  | Yes    | No     | No     | [A-z][0-9]         | Yes         |
-| Properties name           | PascalCase | Yes    | No     | No     | [A-z][0-9]         | No          |
-| Delegate name             | PascalCase | No     | No     | Yes    | [A-z]              | No          |
-| Enum type name            | PascalCase | Yes    | No     | No     | [A-z]              | No          |
+| Term name                 | Notation   | Plural | Allowed characters | Underscores |
+|:--------------------------|:-----------|:-------|:-------------------|:------------|
+| Namespace name            | PascalCase | Yes    | [A-z][0-9]		   | No          |
+| Class name                | PascalCase | No     | [A-z][0-9]         | No          |
+| Constructor name          | PascalCase | No     | [A-z][0-9]         | No          |
+| Method name               | PascalCase | Yes    | [A-z][0-9]         | No          |
+| Method arguments          | camelCase  | Yes    | [A-z][0-9]         | No          |
+| Local variables           | camelCase  | Yes    | [A-z][0-9]         | No          |
+| Constants name            | PascalCase | No     | [A-z][0-9]         | No          |
+| Field name                | camelCase  | Yes    | [A-z][0-9]         | Yes         |
+| Properties name           | PascalCase | Yes    | [A-z][0-9]         | No          |
+| Delegate name             | PascalCase | No     | [A-z]              | No          |
+| Enum type name            | PascalCase | Yes    | [A-z]              | No          |
 
 
 ---
@@ -201,5 +201,48 @@ public class UserAccount
 	}
 
 ```
+
+
+#### Information on events can use suffix in name
+
+```csharp
+
+	// Declaring events with generic EventHandler<>
+	public event EventHandler<UserAccountEventArgs> UserAccountEvent;
+
+	// Declaring events with delagates
+	public delegate void UserAccountEventHandler(object sender, UserAccountEventArgs e);
+
+	public class UserAccountEventArgs
+	{
+		// ...
+	}
+
+	// OR
+
+	public class UserAccountEventArgs : System.EventArgs
+	{
+		// ...
+	}
+
+```
+
+
+#### In method calls you can use named arguments
+
+```csharp
+
+	// Method
+	public void MethodName(string text, int number) 
+	{
+		// ...
+	}
+
+	MethodName("Random text string", 100);
+	// OR
+	MethodName(text: "Random text string", number: 100);
+
+```
+
 
 ### More soon...
