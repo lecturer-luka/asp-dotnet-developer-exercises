@@ -207,23 +207,23 @@ public class UserAccount
 
 ```csharp
 
-	// Declaring events with generic EventHandler<>
-	public event EventHandler<UserAccountEventArgs> UserAccountEvent;
+// Declaring events with generic EventHandler<>
+public event EventHandler<UserAccountEventArgs> UserAccountEvent;
 
-	// Declaring events with delagates
-	public delegate void UserAccountEventHandler(object sender, UserAccountEventArgs e);
+// Declaring events with delagates
+public delegate void UserAccountEventHandler(object sender, UserAccountEventArgs e);
 
-	public class UserAccountEventArgs
-	{
-		// ...
-	}
+public class UserAccountEventArgs
+{
+	// ...
+}
 
-	// OR
+// OR
 
-	public class UserAccountEventArgs : System.EventArgs
-	{
-		// ...
-	}
+public class UserAccountEventArgs : System.EventArgs
+{
+	// ...
+}
 
 ```
 
@@ -232,15 +232,15 @@ public class UserAccount
 
 ```csharp
 
-	// Method
-	public void MethodName(string text, int number) 
-	{
-		// ...
-	}
+// Method
+public void MethodName(string text, int number) 
+{
+	// ...
+}
 
-	MethodName("Random text string", 100);
-	// OR
-	MethodName(text: "Random text string", number: 100);
+MethodName("Random text string", 100);
+// OR
+MethodName(text: "Random text string", number: 100);
 
 ```
 
