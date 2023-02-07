@@ -1,6 +1,6 @@
 ﻿/*
- * Using basic variables and arithmetic operators write a simple program that takes distance and time as input
- * and displays speed km/h and mph.
+ * Using basic variables and arithmetic operators write a simple program that takes distance and time 
+ * as input and displays speed km/h and mph.
  */
 
 float distance, hour, minutes, seconds;

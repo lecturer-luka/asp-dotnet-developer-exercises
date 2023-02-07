@@ -1,7 +1,7 @@
 ﻿/*
  * Using If statement write a simple program for entering and reading first name, last name and entering scores of three subjects for one student from the competition.
  * Calculate the total and percentage of the points.
- * Depending on the percentage, give the student one of the rewards
+ * Depending on the percentage, give the student one of the rewards.
  */
 
 #region Here are the default variables with initial values that cannot be changed
