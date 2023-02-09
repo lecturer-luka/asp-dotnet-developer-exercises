@@ -1,0 +1,103 @@
+﻿- Croatian version
+
+CREATE DATABASE linq_sql COLLATE Croatian_CI_AS;
+
+USE linq_sql;
+CREATE TABLE Odjel (
+	Id INT PRIMARY KEY IDENTITY(1,1),
+	Naziv NVARCHAR(150) NOT NULL
+);
+
+USE linq_sql;
+CREATE TABLE Zaposlenik (
+	Id INT PRIMARY KEY IDENTITY(1,1),
+	ImePrezime NVARCHAR(150) NOT NULL,
+	Email NVARCHAR(100) NOT NULL,
+	Telefon NCHAR(50) NULL,
+	Adresa NVARCHAR(80) NOT NULL,
+	OdjelId INT NOT NULL FOREIGN KEY REFERENCES Odjel(Id),
+	Starost INT NULL CHECK ( Starost >= 18) DEFAULT 18,
+	Placa DECIMAL(9,2) NOT NULL
+); 
+
+USE linq_sql;
+INSERT INTO Odjel VALUES ('Informatika'), ('Dizajn'), ('Marketing'), ('Serveri');
+
+USE linq_sql;
+INSERT INTO Zaposlenik VALUES
+('Mićo Programerić', 'mico@email.com', '0981234567', 'Stara Cesta bb', 1, 34, 4658.11),
+('Martina Programerić', 'martina@email.com', '091234567', 'Mala plaža 11', 3, 28, 90456.00),
+('Ana Dizajnerić', 'ana@email.com', '099123456', 'Vukovarska 33', 2, 35, 11549.00),
+('Ivo Sistemovski', 'ivo@email.com', '098716363', 'Pavlov put 5c', 4, 18, 6430.77),
+('Mirna Kodić', 'mirna@email.com', '091273621', 'Mala plaža 4c', 1, 28, 876.00),
+('Ana Marija Test', 'ana.marija@email.com', '0962616623', 'Mala plaža 9', 1, 19, 1468.77),
+('Ivona Mreža', 'ivona@email.com', NULL, 'Planina 4c', 2, 19, 650.00),
+('Patrik Mrežić', 'patrik@email.com', NULL, 'Visoki most bb', 2, 35, 24765.88),
+('Ivan Marko Prodajić', 'ivan.marko@email.com', '09899821', 'StaraCesta bb', 3, 18, 5973.22),
+('Pero Validovski', 'pero@email.com', '097552413', 'Osnovna cesta 3', 4, 34, 45965.09),
+('Marko Programerić', 'marko@email.com', NULL, 'Otočni put 2', 3, 18, 1300.00);
+
+
+
+
+- English version
+
+CREATE DATABASE linq_sql COLLATE Croatian_CI_AS;
+
+USE linq_sql;
+CREATE TABLE Department (
+	Id INT PRIMARY KEY IDENTITY(1,1),
+	Name NVARCHAR(150) NOT NULL
+);
+
+USE linq_sql;
+CREATE TABLE Employee (
+	Id INT PRIMARY KEY IDENTITY(1,1),
+	NameSurname NVARCHAR(150) NOT NULL,
+	Email NVARCHAR(100) NOT NULL,
+	Phone NCHAR(50) NULL,
+	Address NVARCHAR(80) NOT NULL,
+	DepartmentId INT NOT NULL FOREIGN KEY REFERENCES Department(Id),
+	Age INT NULL CHECK ( Age >= 18) DEFAULT 18,
+	Salary DECIMAL(9,2) NOT NULL
+); 
+
+USE linq_sql;
+INSERT INTO Department VALUES ('Informatika'), ('Dizajn'), ('Marketing'), ('Serveri');
+
+USE linq_sql;
+INSERT INTO Employee VALUES
+('Mićo Programerić', 'mico@email.com', '0981234567', 'Stara Cesta bb', 1, 34, 4658.11),
+('Martina Programerić', 'martina@email.com', '091234567', 'Mala plaža 11', 3, 28, 90456.00),
+('Ana Dizajnerić', 'ana@email.com', '099123456', 'Vukovarska 33', 2, 35, 11549.00),
+('Ivo Sistemovski', 'ivo@email.com', '098716363', 'Pavlov put 5c', 4, 18, 6430.77),
+('Mirna Kodić', 'mirna@email.com', '091273621', 'Mala plaža 4c', 1, 28, 876.00),
+('Ana Marija Test', 'ana.marija@email.com', '0962616623', 'Mala plaža 9', 1, 19, 1468.77),
+('Ivona Mreža', 'ivona@email.com', NULL, 'Planina 4c', 2, 19, 650.00),
+('Patrik Mrežić', 'patrik@email.com', NULL, 'Visoki most bb', 2, 35, 24765.88),
+('Ivan Marko Prodajić', 'ivan.marko@email.com', '09899821', 'StaraCesta bb', 3, 18, 5973.22),
+('Pero Validovski', 'pero@email.com', '097552413', 'Osnovna cesta 3', 4, 34, 45965.09),
+('Marko Programerić', 'marko@email.com', NULL, 'Otočni put 2', 3, 18, 1300.00);
+
+
+
+//=================================================================================================================
+
+
+// NuGet Packages needed: Entity Framework Core SQLServer and Entity Framework Core Tools
+// NOTE: code to connect database and library "Exercise.Library"
+// NOTE: Check the name of your local SQL server and update the "Server = SQL server name" parameter as necessary.
+
+// Package Manager Console (Windows user):
+	Scaffold-DbContext "Server=.\SQLExpress; Database=linq_sql; Trusted_Connection=True; TrustServerCertificate = true;  MultipleActiveResultSets=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+// Package Manager Console (SQL user):
+	Scaffold-DbContext "Server=.\SQLExpress; Database= linq_sql; UID = YourSqlUsername; Password = YourSqlUserPassword; TrustServerCertificate = true; MultipleActiveResultSets=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
+// CLI/Terminal (Windows user)
+	dotnet ef dbcontext scaffold "Server=.\SQLExpress; Database= linq_sql; Trusted_Connection=True; TrustServerCertificate = true; MultipleActiveResultSets=true;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+
+
+// CLI/Terminal (SQL user)
+	dotnet ef dbcontext scaffold "Server=.\SQLExpress; Database=linq_sql; UID = YourSqlUsername; Password = YourSqlUserPassword; TrustServerCertificate = true; MultipleActiveResultSets=true;" Microsoft.EntityFrameworkCore.SqlServer -o Models
