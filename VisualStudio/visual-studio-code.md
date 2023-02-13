@@ -64,6 +64,26 @@ dotnet new classlib --framework net6.0 -o MyLibraryName
 dotnet sln add MyLibraryName\MyLibraryName.csproj
 ```
 
+#### Add a ASP.NET Core Web App (MVC) project to a solution:
+
+```dotnet
+cd MySolutionName
+
+dotnet new mvc --framework net6.0 -o MvcProjectName
+
+dotnet sln add .\MvcProjectName\MvcProjectName.csproj
+```
+
+#### Add a ASP.NET Core Web App (MVC) project to a solution (with namespace, class and Main() method in Program file):
+
+```dotnet
+cd MySolutionName
+
+dotnet new mvc --framework net6.0 --use-program-main -o MvcProjectName
+
+dotnet sln add .\MvcProjectName\MvcProjectName.csproj
+```
+
 
 ## Project reference
 
@@ -80,6 +100,53 @@ dotnet new console -o SecondProject --framework net6.0  --use-program-main
 
 // Adds "SecondProject.csproj" folder reference to "FirstProject.csproj" folder
 dotnet add FirstProject/FirstProject.csproj reference SecondProject/SecondProject.csproj
+```
+
+
+##  Install or update packages to existing project with NuGet
+
+Find package name and version on https://www.nuget.org/ website.
+
+
+#### Install or update a package
+
+
+
+```dotnet
+cd MySolutionName/MvcProjectName
+
+// dotnet add package <PACKAGE_NAME>
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+```
+
+#### Install a specific version of a package
+
+```dotnet
+cd MySolutionName/MvcProjectName
+
+// dotnet add package <PACKAGE_NAME> -v <VERSION>
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 7.0.2
+
+```
+
+#### Remove a package
+
+```dotnet
+
+cd MySolutionName/MvcProjectName
+
+// dotnet remove package <PACKAGE_NAME>
+dotnet remove package Microsoft.EntityFrameworkCore.SqlServer
+
+```
+
+#### List all packages
+
+```dotnet
+
+cd MySolutionName/MvcProjectName
+
+dotnet list package
 ```
 
 
