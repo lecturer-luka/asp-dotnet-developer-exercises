@@ -132,7 +132,6 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 7.0.2
 #### Remove a package
 
 ```dotnet
-
 cd MySolutionName/MvcProjectName
 
 // dotnet remove package <PACKAGE_NAME>
@@ -143,7 +142,6 @@ dotnet remove package Microsoft.EntityFrameworkCore.SqlServer
 #### List all packages
 
 ```dotnet
-
 cd MySolutionName/MvcProjectName
 
 dotnet list package
