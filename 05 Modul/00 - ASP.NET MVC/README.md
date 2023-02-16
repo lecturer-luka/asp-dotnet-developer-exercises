@@ -1,16 +1,19 @@
 <div align="center">
-	<h3 align="center">Introductory exercises for Web App ASP.NET MVC</h3>
-	
-	---
 
-	List of exercise for a introductory level of data manipulation i MVC architecture.
+<!-- title -->
+
+# Introductory exercises for Web App ASP.NET MVC
+
+<!-- description -->
+
+List of exercise for a introductory level of data manipulation i MVC architecture.
 	The exercises teach you how to pass data from the controller to the view.
-	
-	Basic ways of forwarding data:
-	* Model object - refers to the model data that is passed from the controller to the view. This data can be of any type, but typically it is an instance of a class that represents the data that the view needs to display.
-	* ViewBag - a dynamic object in C# that is used to pass data between a controller and a view in ASP.NET applications. It is a property of the Controller base class that allows you to store data and then access it from the view.
-	* ViewData - object used to pass data from a controller action to a view. It is a dictionary that stores key-value pairs, where the key is a string and the value can be any object.
-	
+
+Basic ways of forwarding data:
+* Model object - refers to the model data that is passed from the controller to the view. This data can be of any type, but typically it is an instance of a class that represents the data that the view needs to display.
+* ViewBag - a dynamic object in C# that is used to pass data between a controller and a view in ASP.NET applications. It is a property of the Controller base class that allows you to store data and then access it from the view.
+* ViewData - object used to pass data from a controller action to a view. It is a dictionary that stores key-value pairs, where the key is a string and the value can be any object.
+
 </div>
 
 
