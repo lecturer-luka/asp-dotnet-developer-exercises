@@ -5,7 +5,7 @@
 	<p align="center">
 		List of exercise for a introductory level of data manipulation i MVC architecture.
 		The exercises teach you how to pass data from the controller to the view.
-	<p>
+	</p>
 	<p align="left">
 		Basic ways of forwarding data:
 		* Model object - refers to the model data that is passed from the controller to the view. This data can be of any type, but typically it is an instance of a class that represents the data that the view needs to display.
