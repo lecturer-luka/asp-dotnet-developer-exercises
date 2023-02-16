@@ -1,17 +1,16 @@
 <div align="center">
 	<h3 align="center">Introductory exercises for Web App ASP.NET MVC</h3>
+	
+	---
 
-
-	<p align="center">
-		List of exercise for a introductory level of data manipulation i MVC architecture.
-		The exercises teach you how to pass data from the controller to the view.
-	</p>
-	<p align="left">
-		Basic ways of forwarding data:
-		* Model object - refers to the model data that is passed from the controller to the view. This data can be of any type, but typically it is an instance of a class that represents the data that the view needs to display.
-		* ViewBag - a dynamic object in C# that is used to pass data between a controller and a view in ASP.NET applications. It is a property of the Controller base class that allows you to store data and then access it from the view.
-		* ViewData - object used to pass data from a controller action to a view. It is a dictionary that stores key-value pairs, where the key is a string and the value can be any object.
-	</p>
+	List of exercise for a introductory level of data manipulation i MVC architecture.
+	The exercises teach you how to pass data from the controller to the view.
+	
+	Basic ways of forwarding data:
+	* Model object - refers to the model data that is passed from the controller to the view. This data can be of any type, but typically it is an instance of a class that represents the data that the view needs to display.
+	* ViewBag - a dynamic object in C# that is used to pass data between a controller and a view in ASP.NET applications. It is a property of the Controller base class that allows you to store data and then access it from the view.
+	* ViewData - object used to pass data from a controller action to a view. It is a dictionary that stores key-value pairs, where the key is a string and the value can be any object.
+	
 </div>
 
 
@@ -38,7 +37,7 @@
 	* Price (decimal)
 3. Create a new controller called "CarController" with actions "Index", "FilterByYear" and "FilterByColor".
 4. Use following demo data for your controller actions:
-	 ```dotnet
+	 ```csharp
 	List<Car> demoCarData = new List<Car> {
 		new Car {Make = Toyota, Model = Corolla, Year = 2020, Color = Gray, Price = 25000},
 		new Car {Make = Honda, Model = Civic, Year = 2021, Color = Red, Price = 28000},
