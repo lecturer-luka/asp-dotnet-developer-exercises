@@ -66,3 +66,33 @@ Basic ways of forwarding data:
 6. Create a new "Index.cshtml" view in the Views/Football folder and display the Football data in a table format.
 
 ## Excercise 4
+
+1. Create a new ASP.NET Core MVC application using Visual Studio or the Visual Studio Code.
+2. Add a new "Beer" model class to the Models folder with the following properties:
+	* Name (string)
+	* Type (string)
+	* AlcoholPercentage (double)
+	* Brewery (string)
+	* Country (string)
+3. Use the following demo data for your controller actions:
+	```csharp
+	IEnumerable<Beer> beers = new List<Beer>
+	{
+		new Beer { Name = "Heineken", Type = "Lager", AlcoholPercentage = 5, Brewery = "Heineken International", Country = "Netherlands" },
+		new Beer { Name = "Guinness", Type = "Stout", AlcoholPercentage = 4.2, Brewery = "Guinness & Co.", Country = "Ireland" },
+		new Beer { Name = "Corona", Type = "Lager", AlcoholPercentage = 4.5, Brewery = "Grupo Modelo", Country = "Mexico" },
+		new Beer { Name = "Budweiser", Type = "Lager", AlcoholPercentage = 5, Brewery = "Anheuser-Busch InBev", Country = "United States" },
+		new Beer { Name = "Stella Artois", Type = "Pilsner", AlcoholPercentage = 5, Brewery = "Anheuser-Busch InBev", Country = "Belgium" },
+		new Beer { Name = "Sapporo", Type = "Lager", AlcoholPercentage = 5, Brewery = "Sapporo Breweries Ltd.", Country = "Japan" },
+		new Beer { Name = "Peroni", Type = "Lager", AlcoholPercentage = 5.1, Brewery = "Peroni Brewery", Country = "Italy" },
+		new Beer { Name = "Asahi", Type = "Lager", AlcoholPercentage = 5, Brewery = "Asahi Breweries Ltd.", Country = "Japan" },
+		new Beer { Name = "Hoegaarden", Type = "Witbier", AlcoholPercentage = 4.9, Brewery = "InBev Belgium", Country = "Belgium" },
+		new Beer { Name = "Tsingtao", Type = "Lager", AlcoholPercentage = 4.7, Brewery = "Tsingtao Brewery Co. Ltd.", Country = "China" }
+	};
+	```
+4. Create a new "BeerController" controller class with actions "Index", "FilterByPercentage", "GroupByCountry", "FilterByName", and "GroupByType".
+5. In the "Index" action, retrieve a list of all beers from a data source and pass it to the corresponding view to display.
+6. In the "FilterByPercentage" action, retrieve a list of all beers with a higher percentage of alcohol than 5% from a data source and pass it to the corresponding view to display.
+7. In the "GroupByCountry" action, retrieve a list of all beers from a data source, group them by country and pass it to the corresponding view to display.
+8. In the "FilterByName" action, retrieve a list of all beers from a data source, filter names by letter "S" and pass it to the corresponding view to display.
+9. In the "GroupByType" action, retrieve a list of all beers from a data source, group them by type and pass it to the corresponding view to display.
