@@ -6,15 +6,14 @@
 
 <!-- description -->
 
-List of exercise for a introductory level of data manipulation i MVC architecture.
-	The exercises teach you how to pass data from the controller to the view.
+List of exercise for a introductory level of data manipulation i MVC architecture. The exercises teach you how to pass data from the controller to the view.
+
+</div>
 
 Basic ways of forwarding data:
 * Model object - refers to the model data that is passed from the controller to the view. This data can be of any type, but typically it is an instance of a class that represents the data that the view needs to display.
 * ViewBag - a dynamic object in C# that is used to pass data between a controller and a view in ASP.NET applications. It is a property of the Controller base class that allows you to store data and then access it from the view.
 * ViewData - object used to pass data from a controller action to a view. It is a dictionary that stores key-value pairs, where the key is a string and the value can be any object.
-
-</div>
 
 
 ## Excercise 1
@@ -55,5 +54,15 @@ Basic ways of forwarding data:
 
 ## Excercise 3
 
+1. Create a new ASP.NET Core MVC application using Visual Studio or the Visual Studio Code.
+2. Add a new "Football" model class to the Models folder with the following properties:
+	* TeamName (string)
+	* Country (string)
+	* Stadium (string)
+	* Founded (int)
+3. Create a new "FootballController" controller class with an "Index" action method.
+4. In the "Index" action method, create a List<Football> object and populate it with some dummy data (e.g. 5 Football objects).
+5. Pass the List<Football> object to the corresponding "Index" view.
+6. Create a new "Index.cshtml" view in the Views/Football folder and display the Football data in a table format.
 
 ## Excercise 4
