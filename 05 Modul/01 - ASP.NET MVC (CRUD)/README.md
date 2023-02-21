@@ -10,7 +10,7 @@ List of exercise for data manipulation i MVC architecture. The exercises teach y
 
 </div>
 
-## Excercise 1
+## Exercise 1
 
 1. Create a new ASP.NET Core MVC application using Visual Studio or the command line.
 2. Add a new model class called "Book" with properties such as:
@@ -26,7 +26,7 @@ List of exercise for data manipulation i MVC architecture. The exercises teach y
 7. In the "Delete" action, retrieve the details of a book by its ID, display a confirmation message, then delete it from the data source and redirect to the "Index" action to display the updated list.
 
 
-## Excercise 2
+## Exercise 2
 
 1. Create a new ASP.NET Core MVC application using Visual Studio or the command line.
 2. Add a new model class called "Car" with properties such as:
@@ -53,7 +53,7 @@ List of exercise for data manipulation i MVC architecture. The exercises teach y
 8. In the "Delete" action, retrieve the details of a car by its ID, display a confirmation message, then delete it from the data source and redirect to the "Index" action to display the updated list.
 
 
-## Excercise 3
+## Exercise 3
 
 1. Create a new ASP.NET Core MVC project in Visual Studio.
 2. Add a new "Football" model class to the Models folder with the following properties:
@@ -72,7 +72,7 @@ List of exercise for data manipulation i MVC architecture. The exercises teach y
 10. In the "Details" view, display the details of the Football object in a user-friendly way.
 
 
-## Excercise 4
+## Exercise 4
 
 1. Create a new ASP.NET Core MVC application using Visual Studio.
 2. Create a Beer class with properties like:
@@ -86,16 +86,16 @@ List of exercise for data manipulation i MVC architecture. The exercises teach y
 	```csharp
 	IEnumerable<Beer> beers = new List<Beer>
 	{
-		new Beer { Name = "Heineken", Type = "Lager", AlcoholPercentage = 5, Brewery = "Heineken International", Country = "Netherlands" },
-		new Beer { Name = "Guinness", Type = "Stout", AlcoholPercentage = 4.2, Brewery = "Guinness & Co.", Country = "Ireland" },
-		new Beer { Name = "Corona", Type = "Lager", AlcoholPercentage = 4.5, Brewery = "Grupo Modelo", Country = "Mexico" },
-		new Beer { Name = "Budweiser", Type = "Lager", AlcoholPercentage = 5, Brewery = "Anheuser-Busch InBev", Country = "United States" },
-		new Beer { Name = "Stella Artois", Type = "Pilsner", AlcoholPercentage = 5, Brewery = "Anheuser-Busch InBev", Country = "Belgium" },
-		new Beer { Name = "Sapporo", Type = "Lager", AlcoholPercentage = 5, Brewery = "Sapporo Breweries Ltd.", Country = "Japan" },
-		new Beer { Name = "Peroni", Type = "Lager", AlcoholPercentage = 5.1, Brewery = "Peroni Brewery", Country = "Italy" },
-		new Beer { Name = "Asahi", Type = "Lager", AlcoholPercentage = 5, Brewery = "Asahi Breweries Ltd.", Country = "Japan" },
-		new Beer { Name = "Hoegaarden", Type = "Witbier", AlcoholPercentage = 4.9, Brewery = "InBev Belgium", Country = "Belgium" },
-		new Beer { Name = "Tsingtao", Type = "Lager", AlcoholPercentage = 4.7, Brewery = "Tsingtao Brewery Co. Ltd.", Country = "China" }
+		new Beer { Id = 1001, Name = "Heineken", Type = "Lager", AlcoholPercentage = 5, Brewery = "Heineken International", Country = "Netherlands" },
+		new Beer { Id = 1002, Name = "Guinness", Type = "Stout", AlcoholPercentage = 4.2, Brewery = "Guinness & Co.", Country = "Ireland" },
+		new Beer { Id = 1003, Name = "Corona", Type = "Lager", AlcoholPercentage = 4.5, Brewery = "Grupo Modelo", Country = "Mexico" },
+		new Beer { Id = 1004, Name = "Budweiser", Type = "Lager", AlcoholPercentage = 5, Brewery = "Anheuser-Busch InBev", Country = "United States" },
+		new Beer { Id = 1005, Name = "Stella Artois", Type = "Pilsner", AlcoholPercentage = 5, Brewery = "Anheuser-Busch InBev", Country = "Belgium" },
+		new Beer { Id = 1006, Name = "Sapporo", Type = "Lager", AlcoholPercentage = 5, Brewery = "Sapporo Breweries Ltd.", Country = "Japan" },
+		new Beer { Id = 1007, Name = "Peroni", Type = "Lager", AlcoholPercentage = 5.1, Brewery = "Peroni Brewery", Country = "Italy" },
+		new Beer { Id = 1008, Name = "Asahi", Type = "Lager", AlcoholPercentage = 5, Brewery = "Asahi Breweries Ltd.", Country = "Japan" },
+		new Beer { Id = 1009, Name = "Hoegaarden", Type = "Witbier", AlcoholPercentage = 4.9, Brewery = "InBev Belgium", Country = "Belgium" },
+		new Beer { Id = 1020, Name = "Tsingtao", Type = "Lager", AlcoholPercentage = 4.7, Brewery = "Tsingtao Brewery Co. Ltd.", Country = "China" }
 	};
 	```
 4. Add a "List" view that displays a list of all the beers in the database.
