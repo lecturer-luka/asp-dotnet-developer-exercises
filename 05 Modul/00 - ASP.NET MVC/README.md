@@ -16,7 +16,7 @@ Basic ways of forwarding data:
 * ViewData - object used to pass data from a controller action to a view. It is a dictionary that stores key-value pairs, where the key is a string and the value can be any object.
 
 
-## Excercise 1
+## Exercise 1
 
 1. Create a new ASP.NET Core MVC application using Visual Studio or the Visual Studio Code.
 2. Add a new model class called "Book" with properties such as:
@@ -28,7 +28,7 @@ Basic ways of forwarding data:
 4. Inside "BookController" create a private method "DemoBookCollection" which will return a collection of books that will contain 4 objects of the "Book" class filled with arbitrary data.
 5. In the "Index" action, retrieve a list of all books from a data source and pass it to the corresponding view to display.
 
-## Excercise 2
+## Exercise 2
 
 1. Create a new ASP.NET Core MVC application using Visual Studio or the Visual Studio Code.
 2. Add a new model class called "Car" with properties such as:
@@ -52,7 +52,7 @@ Basic ways of forwarding data:
 6. In the "FilterByYear" action, retrieve a list of cars older then 2020, and pass it to the corresponding view to display.
 6. In the "FilterByColor" action, retrieve a list of cars where color contains letter "L", and pass it to the corresponding view to display.
 
-## Excercise 3
+## Exercise 3
 
 1. Create a new ASP.NET Core MVC application using Visual Studio or the Visual Studio Code.
 2. Add a new "Football" model class to the Models folder with the following properties:
@@ -65,7 +65,7 @@ Basic ways of forwarding data:
 5. Pass the List<Football> object to the corresponding "Index" view.
 6. Create a new "Index.cshtml" view in the Views/Football folder and display the Football data in a table format.
 
-## Excercise 4
+## Exercise 4
 
 1. Create a new ASP.NET Core MVC application using Visual Studio or the Visual Studio Code.
 2. Add a new "Beer" model class to the Models folder with the following properties:
