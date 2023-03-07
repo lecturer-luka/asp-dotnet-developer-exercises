@@ -38,7 +38,7 @@ A View can be thought of as a way to separate the presentation logic of a web pa
 A partial View, on the other hand, is a reusable portion of a View that can be included in other Views. It's essentially a smaller, self-contained View that can be used to render a specific portion of a web page.
 
 
-# View Component
+## View Component
 
 A View Component is a way to separate functionality and presentation logic into a self-contained component that can be easily reused across multiple views in a web application. It is essentially a combination of a controller action and a partial view, which can be used to render a specific part of a web page.
 
