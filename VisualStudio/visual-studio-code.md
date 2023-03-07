@@ -150,16 +150,27 @@ dotnet list package
 
 ## Project building and runing
 
-Build current’s folder solution or project:
+Build currentâ€™s folder solution or project:
 
 ```dotnet
 dotnet build
 ```
 
-Run current’s folder project:
+Run currentâ€™s folder project:
 
 ```dotnet
 dotnet run
 ```
+
+
+## LINQ - Scafolding 
+
+```dotnet
+dotnet ef dbcontext scaffold "Server=192.168.20.111; Database=linq_to_sql; TrustServerCertificate = true;User ID=SqlUser;Password=VaSaLoZINka; MultipleActiveResultSets=true;" Microsoft.EntityFrameworkCore.SqlServer -o Models  
+```
+
+
+
+
 
 ### More soon...
