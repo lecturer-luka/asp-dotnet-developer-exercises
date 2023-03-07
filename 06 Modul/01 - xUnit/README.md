@@ -41,10 +41,14 @@ public class BookController : Controller
 3. Create new xUnit project using Visual Studio or the Visual Studio Code.
 4. Add project reference to newly created xUnit project and create class called "BookControllerTest".
 5. Inside "BookControllerTest" class, create the following methods that will test your "Index" action for:
-    * GetBook_ReturnsOkResult_WhenBookExists
+    * GetBook_ReturnsOkResult_WhenBookExists()
+
         > To test this method, you can use "xUnit and Moq package" to create a mock object for the "IDataRepository<Book> interface" and pass it to the "BookController" constructor.
+
         > We need to create a mock object for the "IDataRepository<Book> interface" using "Moq" and set it up to "return a Book object" with an "Id of 1" and a "Title" of "Test Book" when the "GetById" method is called with any integer argument.
+
         > Then create an instance of the "BookController" class with the mock object and call the "GetBook" method with an argument of 1.
+
         > Assert that the result is type of "ViewResult" and assert that the object model is type of "Book"
 
 
