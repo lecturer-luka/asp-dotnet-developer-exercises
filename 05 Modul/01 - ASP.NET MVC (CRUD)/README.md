@@ -98,7 +98,7 @@ List of exercise for data manipulation i MVC architecture. The exercises teach y
 		new Beer { Id = 1020, Name = "Tsingtao", Type = "Lager", AlcoholPercentage = 4.7, Brewery = "Tsingtao Brewery Co. Ltd.", Country = "China" }
 	};
 	```
-4. Add a "List" view that displays a list of all the beers in the database.
+4. Add a "List" view that displays a list of all the beers from data source.
 5. Add a "Details" view that displays the details of a single beer.
 6. Add a "Create" view that allows users to add a new beer to the list.
 7. Add validation to the "Create" view to ensure that all required fields are filled in.
