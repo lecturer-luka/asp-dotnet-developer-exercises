@@ -102,5 +102,5 @@ List of exercise for data manipulation i MVC architecture. The exercises teach y
 5. Add a "Details" view that displays the details of a single beer.
 6. Add a "Create" view that allows users to add a new beer to the list.
 7. Add validation to the "Create" view to ensure that all required fields are filled in.
-8. Add the ability to edit and delete beers from the database.
+8. Add the ability to edit and delete beers from data source.
 9. Add search and filtering functionality to the "List" view, so users can search for beers by name, type, brewery, or country.
