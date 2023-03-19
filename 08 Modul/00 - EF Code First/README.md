@@ -50,7 +50,7 @@ The exercise set cover the most basic ways of **code first** approach. Define yo
     * Year (int),
     * Color (string),
     * Price (decimal)
-4. With help of the `Data Annotations` inside `Book` class use attributes to define primary key and required properties.
+4. With help of the `Data Annotations` inside `Car` class use attributes to define primary key and required properties.
 5. Add a new `DbContext` class called `CarDbContext` and use `DbSet` property to define the table in the database.
 6. In `Program.cs` update service `AddDbContext` to use `UseSqlServer` options with your `connection string`.
 7. Use the `Add-Migration` command in the `Package Manager Console` to create a migration that describes the changes you made to your entity classes.
