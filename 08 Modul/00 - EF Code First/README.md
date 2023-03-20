@@ -12,13 +12,15 @@ The exercise set cover the most basic ways of **code first** approach. Define yo
 	* This means that you can add special attributes to a class property to specify certain rules that the data must follow, such as its minimum and maximum length, whether it's required, or its data type.
 </div>
 
+	* The examples below use MS SQL server databases.
+
 
 ## Exercise 1
 
 1. Create a new ASP.NET Core MVC application using Visual Studio or the Visual Studio Code.
 2. Install the Entity Framework Core packages:
 	* Microsoft.EntityFrameworkCore
-	* Microsoft.EntityFrameworkCore.Design
+	* Microsoft.EntityFrameworkCore.Tools
 	* Microsoft.EntityFrameworkCore.SqlServer
 3. Add a new model class called `Book` with properties such as:
 	* Id (int)
@@ -41,7 +43,7 @@ The exercise set cover the most basic ways of **code first** approach. Define yo
 1. Create a new ASP.NET Core MVC application using Visual Studio or the Visual Studio Code.
 2. Install the Entity Framework Core packages:
 	* Microsoft.EntityFrameworkCore
-	* Microsoft.EntityFrameworkCore.Design
+	* Microsoft.EntityFrameworkCore.Tools
 	* Microsoft.EntityFrameworkCore.SqlServer
 3. Add a new model class called `Car` with properties such as:
 	* Id (int)
@@ -65,7 +67,7 @@ The exercise set cover the most basic ways of **code first** approach. Define yo
 1. Create a new ASP.NET Core MVC application using Visual Studio or the Visual Studio Code.
 2. Install the Entity Framework Core packages:
 	* Microsoft.EntityFrameworkCore
-	* Microsoft.EntityFrameworkCore.Design
+	* Microsoft.EntityFrameworkCore.Tools
 	* Microsoft.EntityFrameworkCore.SqlServer
 3. Create the `BeerStyle` model class:
 	* Id (int)
@@ -90,7 +92,7 @@ The exercise set cover the most basic ways of **code first** approach. Define yo
 1. Create a new ASP.NET Core MVC application using Visual Studio or the Visual Studio Code.
 2. Install the Entity Framework Core packages:
 	* Microsoft.EntityFrameworkCore
-	* Microsoft.EntityFrameworkCore.Design
+	* Microsoft.EntityFrameworkCore.Tools
 	* Microsoft.EntityFrameworkCore.SqlServer
 3. Create the `Author` model class:
 	* Id (int)
