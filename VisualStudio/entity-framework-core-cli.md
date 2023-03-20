@@ -28,9 +28,9 @@ Standard NuGet packages for installation and use with the EF Core framework:
 	* Microsoft.EntityFrameworkCore.SqlServer
 
 ```dotnet
-	dotnet add package Microsoft.EntityFrameworkCore
-	dotnet add package Microsoft.EntityFrameworkCore.Tools
-	dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 ```
 
 
@@ -40,7 +40,6 @@ Standard NuGet packages for installation and use with the EF Core framework:
 ### Adds a new migration
 
 ```dotnet
-
 // Syntax
 dotnet ef migrations add <NameOfTheMigration>
 
@@ -52,7 +51,6 @@ dotnet ef migrations add CreateDatabase
 ### Adds a new migration
 
 ```dotnet
-
 // Syntax
 dotnet ef migrations add <NameOfTheMigration>
 
@@ -79,12 +77,9 @@ dotnet ef database update 0
 ### Removes the migration
 
 ```dotnet
-
 // Syntax
 dotnet ef migrations remove
-
 // OR
-
 dotnet ef migrations remove <NameOfTheMigration>
 
 
